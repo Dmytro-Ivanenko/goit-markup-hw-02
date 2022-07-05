@@ -1,7 +1,6 @@
 /* Палитра
 
-header  bcg-color: #fff;
-main    bcg-color: #E5E5E5;
+main    bcg-color: #fff;
 alt     bcg-color: #F5F4FA;
 footer  bcg-color: #2F303A;
 
@@ -16,3 +15,51 @@ logo    color: #000000;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+
+:root {
+  --m-bcg-col: #fff;
+  --alt-bcg-col: #f5f4fa;
+  --f-bcg-col: #2f303a;
+  --m-col: #212121;
+  --alt-col: #757575;
+  --acc-col: #2196f3;
+  --logo-h-col: #000000;
+  --logo-f-col: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--m-col);
+  background-color: var(--m-bcg-col);
+}
+
+/* Header */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--logo-h-col);
+}
+.logo-acc {
+  color: var(--acc-col);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--m-col);
+}
+
+.cont-item .link {
+  color: var(--alt-col);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--acc-col);
+}
