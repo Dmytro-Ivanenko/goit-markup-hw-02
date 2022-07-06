@@ -25,6 +25,10 @@ font-family: 'Roboto', sans-serif;
   --acc-col: #2196f3;
   --logo-h-col: #000000;
   --logo-f-col: #fff;
+  --hero-col: #fff;
+  --btn-alt-col: #fff;
+  --btn-hover-bcg-col: #188ce8;
+  --foot-alph-col: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -33,6 +37,15 @@ body {
   background-color: var(--m-bcg-col);
 }
 
+.sect-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.hiden-title {
+  display: none;
+}
 /* Header */
 .logo {
   font-family: "Raleway";
@@ -48,6 +61,7 @@ body {
 
 .list {
   list-style-type: none;
+  padding: 0;
 }
 
 .link {
@@ -63,3 +77,115 @@ body {
 .link:focus {
   color: var(--acc-col);
 }
+
+/*--- Main index.html zone --- */
+
+/* Hero */
+.hero {
+  color: var(--hero-col);
+  background-color: var(--f-bcg-col);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--hero-col);
+  background-color: var(--acc-col);
+  /* display: flex;
+align-items: center; */
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-hover-bcg-col);
+  cursor: pointer;
+}
+
+/* Advantges */
+.adv-item {
+  display: block;
+}
+.adv-title {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.adv-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--alt-col);
+}
+
+/* What we do */
+
+/* Staff */
+.staff {
+  background-color: var(--alt-bcg-col);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.staff-item {
+  background-color: var(--m-bcg-col);
+}
+.name {
+  font-weight: 500;
+  line-height: 1;
+}
+.position {
+  color: var(--alt-col);
+}
+
+/* Footer */
+
+.foot {
+  background-color: var(--f-bcg-col);
+}
+
+.foot-item {
+  color: var(--logo-f-col);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.foot-item-cont {
+  color: var(--foot-alph-col);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*--- Main portfolio.html zone --- */
+
+/* Filter */
+
+.btn-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--alt-bcg-col);
+  color: var(--m-col);
+}
+
+.btn-list-item:hover,
+.btn-list-item:focus {
+  background-color: var(--acc-col);
+  color: var(--btn-alt-col);
+  cursor: pointer;
+}
+
+/* Examples */
