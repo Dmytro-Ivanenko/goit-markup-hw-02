@@ -3,6 +3,7 @@
 main    bcg-color: #fff;
 alt     bcg-color: #F5F4FA;
 footer  bcg-color: #2F303A;
+card    bcg-color: #eee;
 
 main    color: #212121;
 alt     color: #757575;
@@ -29,6 +30,7 @@ font-family: 'Roboto', sans-serif;
   --btn-alt-col: #fff;
   --btn-hover-bcg-col: #188ce8;
   --foot-alph-col: rgba(255, 255, 255, 0.6);
+  --card-bcg-col: #eee;
 }
 
 body {
@@ -46,6 +48,7 @@ body {
 .hiden-title {
   display: none;
 }
+
 /* Header */
 .logo {
   font-family: "Raleway";
@@ -95,13 +98,13 @@ body {
 }
 
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--hero-col);
   background-color: var(--acc-col);
-  /* display: flex;
-align-items: center; */
+
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -172,6 +175,7 @@ align-items: center; */
 /* Filter */
 
 .btn-list-item {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -189,3 +193,7 @@ align-items: center; */
 }
 
 /* Examples */
+
+.example-item {
+  background-color: var(--card-bcg-col);
+}
