@@ -67,13 +67,19 @@ body {
   padding: 0;
 }
 
+.link.head-contacts {
+  color: var(--alt-col);
+}
+
 .link {
   text-decoration: none;
   color: var(--m-col);
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.link.foot-item:hover,
+.link.foot-item:focus {
   color: var(--acc-col);
 }
 
@@ -83,10 +89,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.cont-item .link {
-  color: var(--alt-col);
 }
 
 /*--- Main index.html zone --- */
