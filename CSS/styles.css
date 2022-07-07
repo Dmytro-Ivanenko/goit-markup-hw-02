@@ -41,7 +41,7 @@ body {
 
 .sect-title {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -54,7 +54,7 @@ body {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1;
+  line-height: 1.17;
   text-decoration: none;
   color: var(--logo-h-col);
 }
@@ -72,13 +72,21 @@ body {
   color: var(--m-col);
 }
 
-.cont-item .link {
-  color: var(--alt-col);
-}
-
 .link:hover,
 .link:focus {
   color: var(--acc-col);
+}
+
+.nav-item .link,
+.cont-item .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.cont-item .link {
+  color: var(--alt-col);
 }
 
 /*--- Main index.html zone --- */
@@ -120,7 +128,7 @@ body {
 }
 .adv-title {
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -147,10 +155,14 @@ body {
 }
 .name {
   font-weight: 500;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
+
 .position {
   color: var(--alt-col);
+  line-height: 1.19;
 }
 
 /* Footer */
@@ -159,15 +171,23 @@ body {
   background-color: var(--f-bcg-col);
 }
 
-.foot-item {
+.list.adress {
+  font-style: normal;
+}
+
+.link.foot-item,
+.logo.foot-item {
   color: var(--logo-f-col);
+}
+
+.list.adress {
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
+
 .foot-item-cont {
   color: var(--foot-alph-col);
-  font-size: 14px;
-  line-height: 1.7;
 }
 
 /*--- Main portfolio.html zone --- */
@@ -196,4 +216,15 @@ body {
 
 .example-item {
   background-color: var(--card-bcg-col);
+}
+.example-title {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+}
+
+.example-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--alt-col);
 }
