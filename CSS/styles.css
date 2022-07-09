@@ -125,17 +125,17 @@ body {
 }
 
 /* Advantges */
-.adv-item {
+.plus-item {
   display: block;
 }
-.adv-title {
+.plus-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.adv-text {
+.plus-text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
